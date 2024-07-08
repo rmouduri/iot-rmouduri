@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iotp3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iotp3
+  template:
+    metadata:
+      labels:
+        app: iotp3
+    spec:
+      containers:
+        - image: wil42/playground:v1
+          name: iotp3
+          ports:
+          - containerPort: 8888
