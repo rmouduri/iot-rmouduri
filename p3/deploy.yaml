@@ -13,7 +13,7 @@ spec:
         app: iotp3
     spec:
       containers:
-        - image: wil42/playground:v1
+        - image: wil42/playground:v2
           name: iotp3
           ports:
           - containerPort: 8888
